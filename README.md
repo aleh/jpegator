@@ -3,9 +3,9 @@
 JPEGator is a class library which allows to compress and decompress JPEG
 images under .NET Compact Framework 1.0 or 2.0 using C# or Visual Basic.
 
-This is quite an old library I was selling between 2005 and 2009, 
+(This is quite an old library I was selling between 2005 and 2009, 
 but now sharing it here under a MIT license in case someone needs 
-to support old code.
+to support old code.)
 
 This software is based in part on the work of the Independent JPEG Group [http://www.ijg.org/].
 
@@ -15,7 +15,8 @@ For class library reference see \doc\JPEGator Reference.chm.
 
 This package has the following directory layout:
 
-\doc
+- \doc
+
     - JPEGator Reference.chm - Library reference documentation.
 
 - \examples
