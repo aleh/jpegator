@@ -1,0 +1,41 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "resizer", "resizer\resizer.csproj", "{7311F6BA-65C8-46B1-87BA-DC21679AC9E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "triangles", "triangles\triangles.csproj", "{6F5A571E-46EC-42FB-8AF5-E882310F72D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThumbnailViewer", "ThumbnailViewer\ThumbnailViewer.csproj", "{FCF5E4EF-FC10-4678-B832-39AFDE4E6DA7}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "JPEGPad", "JPEGPad\JPEGPad.vbproj", "{783A5CD7-9CF7-4E46-9B72-403EA29F4793}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BitmapBits", "BitmapBits\BitmapBits.vbproj", "{18FE4164-178C-4823-8C61-862DA507685B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7311F6BA-65C8-46B1-87BA-DC21679AC9E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7311F6BA-65C8-46B1-87BA-DC21679AC9E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F5A571E-46EC-42FB-8AF5-E882310F72D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F5A571E-46EC-42FB-8AF5-E882310F72D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCF5E4EF-FC10-4678-B832-39AFDE4E6DA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCF5E4EF-FC10-4678-B832-39AFDE4E6DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCF5E4EF-FC10-4678-B832-39AFDE4E6DA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCF5E4EF-FC10-4678-B832-39AFDE4E6DA7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{783A5CD7-9CF7-4E46-9B72-403EA29F4793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{783A5CD7-9CF7-4E46-9B72-403EA29F4793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{783A5CD7-9CF7-4E46-9B72-403EA29F4793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{783A5CD7-9CF7-4E46-9B72-403EA29F4793}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{18FE4164-178C-4823-8C61-862DA507685B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18FE4164-178C-4823-8C61-862DA507685B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18FE4164-178C-4823-8C61-862DA507685B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{18FE4164-178C-4823-8C61-862DA507685B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18FE4164-178C-4823-8C61-862DA507685B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18FE4164-178C-4823-8C61-862DA507685B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

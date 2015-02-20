@@ -1,0 +1,2785 @@
+# Microsoft eMbedded Visual Tools Project File - Name="libjpeg" - Package Owner=<4>
+# Microsoft eMbedded Visual Tools Generated Build File, Format Version 6.02
+# ** DO NOT EDIT **
+
+# TARGTYPE "Win32 (WCE ARMV4) Dynamic-Link Library" 0xa302
+# TARGTYPE "Win32 (WCE ARMV4I) Dynamic-Link Library" 0xa502
+
+CFG=libjpeg - Win32 (WCE ARMV4I) Debug
+!MESSAGE This is not a valid makefile. To build this project using NMAKE,
+!MESSAGE use the Export Makefile command and run
+!MESSAGE 
+!MESSAGE NMAKE /f "libjpeg.vcn".
+!MESSAGE 
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "libjpeg.vcn" CFG="libjpeg - Win32 (WCE ARMV4I) Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "libjpeg - Win32 (WCE ARMV4I) Release" (based on "Win32 (WCE ARMV4I) Dynamic-Link Library")
+!MESSAGE "libjpeg - Win32 (WCE ARMV4I) Debug" (based on "Win32 (WCE ARMV4I) Dynamic-Link Library")
+!MESSAGE "libjpeg - Win32 (WCE ARMV4) Release" (based on "Win32 (WCE ARMV4) Dynamic-Link Library")
+!MESSAGE "libjpeg - Win32 (WCE ARMV4) Debug" (based on "Win32 (WCE ARMV4) Dynamic-Link Library")
+!MESSAGE 
+
+# Begin Project
+# PROP AllowPerConfigDependencies 0
+# PROP Scc_ProjName ""
+# PROP Scc_LocalPath ""
+# PROP ATL_Project 2
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "ARMV4IRel"
+# PROP BASE Intermediate_Dir "ARMV4IRel"
+# PROP BASE CPU_ID "{DC70F430-E78B-494F-A9D5-62ADC56443B8}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "ARMV4IRel"
+# PROP Intermediate_Dir "ARMV4IRel"
+# PROP CPU_ID "{DC70F430-E78B-494F-A9D5-62ADC56443B8}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+RSC=rc.exe
+# ADD BASE RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "NDEBUG" /d "$(CePlatform)" /d "THUMB" /d "_THUMB_" /d "ARM" /d "_ARM_" /d "ARMV4I" /r
+# ADD RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "NDEBUG" /d "$(CePlatform)" /d "THUMB" /d "_THUMB_" /d "ARM" /d "_ARM_" /d "ARMV4I" /r
+CPP=clarm.exe
+# ADD BASE CPP /nologo /W3 /D _WIN32_WCE=$(CEVersion) /D "ARM" /D "_ARM_" /D "$(CePlatform)" /D "ARMV4I" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "NDEBUG" /D "_USRDLL" /D "LIBJPEG_EXPORTS" /YX /QRarch4T /QRinterwork-return /O2 /M$(CECrtMT) /c
+# ADD CPP /nologo /W3 /I "." /D _WIN32_WCE=$(CEVersion) /D "ARM" /D "_ARM_" /D "$(CePlatform)" /D "ARMV4I" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "NDEBUG" /D "_USRDLL" /D "LIBJPEG_EXPORTS" /YX /QRarch4T /QRinterwork-return /O2 /M$(CECrtMT) /c
+MTL=midl.exe
+# ADD BASE MTL /nologo /D "NDEBUG" /mktyplib203 /o "NUL" /win32
+# ADD MTL /nologo /D "NDEBUG" /mktyplib203 /o "NUL" /win32
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 commctrl.lib coredll.lib /nologo /base:"0x00100000" /stack:0x10000,0x1000 /entry:"_DllMainCRTStartup" /dll /nodefaultlib:"$(CENoDefaultLib)" /subsystem:$(CESubsystem) /MACHINE:THUMB
+# ADD LINK32 commctrl.lib coredll.lib /nologo /base:"0x00100000" /stack:0x10000,0x1000 /entry:"_DllMainCRTStartup" /dll /nodefaultlib:"$(CENoDefaultLib)" /out:"../../lib/JPEGator.jpeg.dll" /subsystem:$(CESubsystem) /MACHINE:THUMB
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "ARMV4IDbg"
+# PROP BASE Intermediate_Dir "ARMV4IDbg"
+# PROP BASE CPU_ID "{DC70F430-E78B-494F-A9D5-62ADC56443B8}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "ARMV4IDbg"
+# PROP Intermediate_Dir "ARMV4IDbg"
+# PROP CPU_ID "{DC70F430-E78B-494F-A9D5-62ADC56443B8}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+RSC=rc.exe
+# ADD BASE RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "DEBUG" /d "$(CePlatform)" /d "THUMB" /d "_THUMB_" /d "ARM" /d "_ARM_" /d "ARMV4I" /r
+# ADD RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "UNICODE" /d "_UNICODE" /d "DEBUG" /d "$(CePlatform)" /d "THUMB" /d "_THUMB_" /d "ARM" /d "_ARM_" /d "ARMV4I" /r
+CPP=clarm.exe
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "ARM" /D "_ARM_" /D "$(CePlatform)" /D "ARMV4I" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_USRDLL" /D "LIBJPEG_EXPORTS" /YX /QRarch4T /QRinterwork-return /M$(CECrtMTDebug) /c
+# ADD CPP /nologo /W3 /Zi /Od /I "." /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "ARM" /D "_ARM_" /D "$(CePlatform)" /D "ARMV4I" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_USRDLL" /D "LIBJPEG_EXPORTS" /YX /QRarch4T /QRinterwork-return /M$(CECrtMTDebug) /c
+MTL=midl.exe
+# ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /o "NUL" /win32
+# ADD MTL /nologo /D "_DEBUG" /mktyplib203 /o "NUL" /win32
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 commctrl.lib coredll.lib /nologo /base:"0x00100000" /stack:0x10000,0x1000 /entry:"_DllMainCRTStartup" /dll /debug /nodefaultlib:"$(CENoDefaultLib)" /subsystem:$(CESubsystem) /MACHINE:THUMB
+# ADD LINK32 commctrl.lib coredll.lib /nologo /base:"0x00100000" /stack:0x10000,0x1000 /entry:"_DllMainCRTStartup" /dll /debug /nodefaultlib:"$(CENoDefaultLib)" /out:"../../lib/JPEGator.jpeg.dll" /subsystem:$(CESubsystem) /MACHINE:THUMB
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "ARMV4Rel"
+# PROP BASE Intermediate_Dir "ARMV4Rel"
+# PROP BASE CPU_ID "{ECBEA43D-CD7B-4852-AD55-D4227B5D624B}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "ARMV4Rel"
+# PROP Intermediate_Dir "ARMV4Rel"
+# PROP CPU_ID "{ECBEA43D-CD7B-4852-AD55-D4227B5D624B}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+RSC=rc.exe
+# ADD BASE RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "NDEBUG" /d "UNICODE" /d "_UNICODE" /d "$(CePlatform)" /d "ARM" /d "_ARM_" /d "ARMV4" /r
+# ADD RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "NDEBUG" /d "UNICODE" /d "_UNICODE" /d "$(CePlatform)" /d "ARM" /d "_ARM_" /d "ARMV4" /r
+CPP=clarm.exe
+# ADD BASE CPP /nologo /W3 /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D "ARMV4" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "NDEBUG" /D "_USRDLL" /D "LIBJPEG_EXPORTS" /YX /O2 /M$(CECrtMT) /c
+# ADD CPP /nologo /W3 /I "." /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D "ARMV4" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "NDEBUG" /D "_USRDLL" /D "LIBJPEG_EXPORTS" /YX /O2 /M$(CECrtMT) /c
+MTL=midl.exe
+# ADD BASE MTL /nologo /D "NDEBUG" /mktyplib203 /o "NUL" /win32
+# ADD MTL /nologo /D "NDEBUG" /mktyplib203 /o "NUL" /win32
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 commctrl.lib coredll.lib /nologo /base:"0x00100000" /stack:0x10000,0x1000 /entry:"_DllMainCRTStartup" /dll /nodefaultlib:"$(CENoDefaultLib)" /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+# ADD LINK32 commctrl.lib coredll.lib /nologo /base:"0x00100000" /stack:0x10000,0x1000 /entry:"_DllMainCRTStartup" /dll /nodefaultlib:"$(CENoDefaultLib)" /out:"../../lib/JPEGator.jpeg.dll" /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "ARMV4Dbg"
+# PROP BASE Intermediate_Dir "ARMV4Dbg"
+# PROP BASE CPU_ID "{ECBEA43D-CD7B-4852-AD55-D4227B5D624B}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "ARMV4Dbg"
+# PROP Intermediate_Dir "ARMV4Dbg"
+# PROP CPU_ID "{ECBEA43D-CD7B-4852-AD55-D4227B5D624B}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+RSC=rc.exe
+# ADD BASE RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "DEBUG" /d "UNICODE" /d "_UNICODE" /d "$(CePlatform)" /d "ARM" /d "_ARM_" /d "ARMV4" /r
+# ADD RSC /l 0x409 /d UNDER_CE=$(CEVersion) /d _WIN32_WCE=$(CEVersion) /d "DEBUG" /d "UNICODE" /d "_UNICODE" /d "$(CePlatform)" /d "ARM" /d "_ARM_" /d "ARMV4" /r
+CPP=clarm.exe
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D "ARMV4" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_USRDLL" /D "LIBJPEG_EXPORTS" /YX /M$(CECrtMTDebug) /c
+# ADD CPP /nologo /W3 /Zi /Od /I "." /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D "ARMV4" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_USRDLL" /D "LIBJPEG_EXPORTS" /YX /M$(CECrtMTDebug) /c
+MTL=midl.exe
+# ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /o "NUL" /win32
+# ADD MTL /nologo /D "_DEBUG" /mktyplib203 /o "NUL" /win32
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 commctrl.lib coredll.lib /nologo /base:"0x00100000" /stack:0x10000,0x1000 /entry:"_DllMainCRTStartup" /dll /debug /nodefaultlib:"$(CENoDefaultLib)" /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+# ADD LINK32 commctrl.lib coredll.lib /nologo /base:"0x00100000" /stack:0x10000,0x1000 /entry:"_DllMainCRTStartup" /dll /debug /nodefaultlib:"$(CENoDefaultLib)" /out:"../../lib/JPEGator.jpeg.dll" /subsystem:$(CESubsystem) /align:"4096" /MACHINE:ARM
+
+!ENDIF 
+
+# Begin Target
+
+# Name "libjpeg - Win32 (WCE ARMV4I) Release"
+# Name "libjpeg - Win32 (WCE ARMV4I) Debug"
+# Name "libjpeg - Win32 (WCE ARMV4) Release"
+# Name "libjpeg - Win32 (WCE ARMV4) Debug"
+# Begin Group "Source Files"
+
+# PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+# Begin Source File
+
+SOURCE=.\jcapimin.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JCAPI=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JCAPI=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JCAPI=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JCAPI=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JCAPI=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jcapistd.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JCAPIS=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JCAPIS=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JCAPIS=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JCAPIS=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JCAPIS=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jccoefct.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JCCOE=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JCCOE=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JCCOE=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JCCOE=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JCCOE=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jccolor.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JCCOL=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JCCOL=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JCCOL=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JCCOL=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JCCOL=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jcdctmgr.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JCDCT=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JCDCT=\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JCDCT=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JCDCT=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JCDCT=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jchuff.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JCHUF=\
+	".\jchuff.h"\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JCHUF=\
+	".\jchuff.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JCHUF=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JCHUF=\
+	".\jchuff.h"\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JCHUF=\
+	".\jchuff.h"\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jcinit.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JCINI=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JCINI=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JCINI=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JCINI=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JCINI=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jcmainct.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JCMAI=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JCMAI=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JCMAI=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JCMAI=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JCMAI=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jcmarker.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JCMAR=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JCMAR=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JCMAR=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JCMAR=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JCMAR=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jcmaster.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JCMAS=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JCMAS=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JCMAS=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JCMAS=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JCMAS=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jcomapi.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JCOMA=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JCOMA=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JCOMA=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JCOMA=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JCOMA=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jcparam.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JCPAR=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JCPAR=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JCPAR=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JCPAR=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JCPAR=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jcphuff.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JCPHU=\
+	".\jchuff.h"\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JCPHU=\
+	".\jchuff.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JCPHU=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JCPHU=\
+	".\jchuff.h"\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JCPHU=\
+	".\jchuff.h"\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jcprepct.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JCPRE=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JCPRE=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JCPRE=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JCPRE=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JCPRE=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jcsample.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JCSAM=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JCSAM=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JCSAM=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JCSAM=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JCSAM=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jctrans.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JCTRA=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JCTRA=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JCTRA=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JCTRA=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JCTRA=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jdapimin.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JDAPI=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JDAPI=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JDAPI=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JDAPI=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JDAPI=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jdapistd.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JDAPIS=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JDAPIS=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JDAPIS=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JDAPIS=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JDAPIS=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jdatadst.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JDATA=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JDATA=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JDATA=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JDATA=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JDATA=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jdatasrc.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JDATAS=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JDATAS=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JDATAS=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JDATAS=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JDATAS=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jdcoefct.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JDCOE=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JDCOE=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JDCOE=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JDCOE=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JDCOE=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jdcolor.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JDCOL=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JDCOL=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JDCOL=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JDCOL=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JDCOL=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jddctmgr.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JDDCT=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JDDCT=\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JDDCT=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JDDCT=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JDDCT=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jdhuff.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JDHUF=\
+	".\jconfig.h"\
+	".\jdhuff.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JDHUF=\
+	".\jdhuff.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JDHUF=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JDHUF=\
+	".\jconfig.h"\
+	".\jdhuff.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JDHUF=\
+	".\jconfig.h"\
+	".\jdhuff.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jdinput.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JDINP=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JDINP=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JDINP=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JDINP=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JDINP=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jdmainct.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JDMAI=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JDMAI=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JDMAI=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JDMAI=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JDMAI=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jdmarker.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JDMAR=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JDMAR=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JDMAR=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JDMAR=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JDMAR=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jdmaster.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JDMAS=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JDMAS=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JDMAS=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JDMAS=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JDMAS=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jdmerge.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JDMER=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JDMER=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JDMER=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JDMER=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JDMER=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jdphuff.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JDPHU=\
+	".\jconfig.h"\
+	".\jdhuff.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JDPHU=\
+	".\jdhuff.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JDPHU=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JDPHU=\
+	".\jconfig.h"\
+	".\jdhuff.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JDPHU=\
+	".\jconfig.h"\
+	".\jdhuff.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jdpostct.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JDPOS=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JDPOS=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JDPOS=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JDPOS=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JDPOS=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jdsample.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JDSAM=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JDSAM=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JDSAM=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JDSAM=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JDSAM=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jdtrans.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JDTRA=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JDTRA=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JDTRA=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JDTRA=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JDTRA=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jfdctflt.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JFDCT=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JFDCT=\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JFDCT=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JFDCT=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JFDCT=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jfdctfst.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JFDCTF=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JFDCTF=\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JFDCTF=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JFDCTF=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JFDCTF=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jfdctint.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JFDCTI=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JFDCTI=\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JFDCTI=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JFDCTI=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JFDCTI=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jidctflt.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JIDCT=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JIDCT=\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JIDCT=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JIDCT=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JIDCT=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jidctfst.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JIDCTF=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JIDCTF=\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JIDCTF=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JIDCTF=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JIDCTF=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jidctint.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JIDCTI=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JIDCTI=\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JIDCTI=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JIDCTI=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JIDCTI=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jidctred.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JIDCTR=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JIDCTR=\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JIDCTR=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JIDCTR=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JIDCTR=\
+	".\jconfig.h"\
+	".\jdct.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jmemmgr.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JMEMM=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmemsys.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JMEMM=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmemsys.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JMEMM=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JMEMM=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmemsys.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JMEMM=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmemsys.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jmemnobs.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JMEMN=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmemsys.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JMEMN=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmemsys.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JMEMN=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmemsys.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JMEMN=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmemsys.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jpegator.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JPEGA=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JPEGA=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JPEGA=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JPEGA=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jquant1.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JQUAN=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JQUAN=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JQUAN=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JQUAN=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JQUAN=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jquant2.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JQUANT=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JQUANT=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JQUANT=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JQUANT=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JQUANT=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\jutils.c
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_JUTIL=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_JUTIL=\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+NODEP_CPP_JUTIL=\
+	".\jconfig.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_JUTIL=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	".\strings.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_JUTIL=\
+	".\jconfig.h"\
+	".\jerror.h"\
+	".\jinclude.h"\
+	".\jmorecfg.h"\
+	".\jpegint.h"\
+	".\jpeglib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\libjpeg.rc
+
+!IF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Release"
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4I) Debug"
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Release"
+
+!ELSEIF  "$(CFG)" == "libjpeg - Win32 (WCE ARMV4) Debug"
+
+!ENDIF 
+
+# End Source File
+# End Group
+# Begin Group "Header Files"
+
+# PROP Default_Filter "h;hpp;hxx;hm;inl"
+# Begin Source File
+
+SOURCE=.\jchuff.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jconfig.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jdct.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jdhuff.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jerror.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jinclude.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jmemsys.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jmorecfg.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jpegint.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jpeglib.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\jversion.h
+# End Source File
+# End Group
+# Begin Group "Resource Files"
+
+# PROP Default_Filter "ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
+# End Group
+# End Target
+# End Project

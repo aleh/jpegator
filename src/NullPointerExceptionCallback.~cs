@@ -1,0 +1,135 @@
+// JPEGator .NET Compact Framework Library.
+// Copyright (C) 2005-2009, Aleh Dzenisiuk. All Rights Reserved.
+// http://dzenisiuk.info/jpegator/
+//
+// When redistributing JPEGator source code the above copyright notice and 
+// this messages should be left intact. In case changes are made by you in 
+// this source code it should be clearly indicated in the beginning of each 
+// changed file.
+
+using System;
+using System.Runtime.InteropServices;
+using Microsoft.WindowsCE.Forms;
+using System.Threading;
+using System.Collections;
+
+namespace JPEGator
+{
+	/// <summary>
+	/// Callback object that can be used as a parameter for calls of native functions.
+	/// </summary>
+	/// TODO: Put common code into base class for both callbacks
+	internal sealed class NullPointerExceptionCallback : IDisposable
+	{
+		private static IntPtr dllHandle;
+
+		private static IntPtr throwPtr;
+
+		static NullPointerExceptionCallback()
+		{
+			dllHandle = LoadLibrary("mscoree1_0.dll");
+			if (dllHandle == IntPtr.Zero)
+				throw new TypeLoadException();
+
+			throwPtr = GetProcAddress(dllHandle, "IL_ThrowExceptionFromPInvoke");
+			if (throwPtr == IntPtr.Zero)
+			{
+				FreeLibrary(dllHandle);
+				dllHandle = IntPtr.Zero;
+				throw new TypeLoadException();
+			}			
+		}
+
+		private IntPtr thunkPtr;
+
+		public NullPointerExceptionCallback()
+		{
+			int[] thunkData;
+			unchecked
+			{
+				thunkData = new int[]
+				{
+					(int)0xe52de004, // str       lr, [sp, #-4]!
+					(int)0xe59f100C, // ldr       r1, [pc, #0xC]
+					(int)0xe3a00000, // mov       r0, #0
+					(int)0xe1a0e00f, // mov       lr, pc
+					(int)0xe1a0f001, // mov       pc, r1
+					(int)0xe8bd8000, // ldmia     sp!, {pc}
+					(int)throwPtr
+				};
+			}
+
+			// TODO: Using of VirtualAlloc is vasting of much virtual memory, 
+			// so some other allocation method should be used
+			// Unfortunately heaps do not work for this, I guess because of 
+			// default memory protection flags heaps routines
+			// use (there is no execute flag there).
+
+			thunkPtr = VirtualAlloc(
+				IntPtr.Zero,
+				thunkData.Length * 4,
+				MemCommit,
+				PageExecuteReadWrite
+			);
+			if (thunkPtr == IntPtr.Zero)
+				throw new OutOfMemoryException();
+
+			Marshal.Copy(thunkData, 0, thunkPtr, thunkData.Length);
+		}
+
+		~NullPointerExceptionCallback()
+		{
+			Dispose(false);
+		}
+
+		public void Dispose()
+		{
+			Dispose(true);
+			GC.SuppressFinalize(this);
+		}
+
+		private void Dispose(bool disposing)
+		{
+			if (thunkPtr != IntPtr.Zero)
+			{
+				VirtualFree(thunkPtr, 0, MemRelease);
+				thunkPtr = IntPtr.Zero;
+			}
+		}
+
+		public IntPtr Ptr
+		{
+			get { return thunkPtr; }
+		}
+
+		public static implicit operator IntPtr(NullPointerExceptionCallback c)
+		{
+			return c.Ptr;
+		}
+
+		public static implicit operator int(NullPointerExceptionCallback c)
+		{
+			return (int)c.Ptr;
+		}
+
+		private const int PageExecuteReadWrite = 0x40;
+
+		private const int MemRelease = 0x8000;
+		private const int MemCommit = 0x1000;
+
+		[DllImport("coredll.dll")]
+		private static extern IntPtr VirtualAlloc(IntPtr lpAddress, int dwSize, int flAllocationType, int flProtect);
+
+		[DllImport("coredll.dll")]
+		private static extern bool VirtualFree(IntPtr lpAddress, int dwSize, int dwFreeType);
+
+		[DllImport("coredll.dll")]
+		private static extern IntPtr LoadLibrary(string fileName);
+
+		[DllImport("coredll.dll")]
+		private static extern bool FreeLibrary(IntPtr handle);
+
+		[DllImport("coredll.dll")]
+		private static extern IntPtr GetProcAddress(IntPtr handle, string procName);
+	}
+}

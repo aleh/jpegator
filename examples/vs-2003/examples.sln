@@ -1,0 +1,47 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{20D4826A-C6FA-45DB-90F4-C717570B9F32}") = "resizer", "resizer\resizer.csdproj", "{7311F6BA-65C8-46B1-87BA-DC21679AC9E5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{20D4826A-C6FA-45DB-90F4-C717570B9F32}") = "triangles", "triangles\triangles.csdproj", "{6F5A571E-46EC-42FB-8AF5-E882310F72D9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{20D4826A-C6FA-45DB-90F4-C717570B9F32}") = "ThumbnailViewer", "ThumbnailViewer\ThumbnailViewer.csdproj", "{FCF5E4EF-FC10-4678-B832-39AFDE4E6DA7}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{CB4CE8C6-1BDB-4DC7-A4D3-65A1999772F8}") = "JPEGPad", "JPEGPad\JPEGPad.vbdproj", "{783A5CD7-9CF7-4E46-9B72-403EA29F4793}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{CB4CE8C6-1BDB-4DC7-A4D3-65A1999772F8}") = "BitmapBits", "BitmapBits\BitmapBits.vbdproj", "{18FE4164-178C-4823-8C61-862DA507685B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{7311F6BA-65C8-46B1-87BA-DC21679AC9E5}.Debug.ActiveCfg = Debug|Pocket PC
+		{7311F6BA-65C8-46B1-87BA-DC21679AC9E5}.Release.ActiveCfg = Release|Pocket PC
+		{6F5A571E-46EC-42FB-8AF5-E882310F72D9}.Debug.ActiveCfg = Debug|Pocket PC
+		{6F5A571E-46EC-42FB-8AF5-E882310F72D9}.Release.ActiveCfg = Release|Pocket PC
+		{FCF5E4EF-FC10-4678-B832-39AFDE4E6DA7}.Debug.ActiveCfg = Debug|Pocket PC
+		{FCF5E4EF-FC10-4678-B832-39AFDE4E6DA7}.Release.ActiveCfg = Release|Pocket PC
+		{783A5CD7-9CF7-4E46-9B72-403EA29F4793}.Debug.ActiveCfg = Debug|Pocket PC
+		{783A5CD7-9CF7-4E46-9B72-403EA29F4793}.Release.ActiveCfg = Release|Pocket PC
+		{18FE4164-178C-4823-8C61-862DA507685B}.Debug.ActiveCfg = Debug|Pocket PC
+		{18FE4164-178C-4823-8C61-862DA507685B}.Debug.Build.0 = Debug|Pocket PC
+		{18FE4164-178C-4823-8C61-862DA507685B}.Debug.Deploy.0 = Debug|Pocket PC
+		{18FE4164-178C-4823-8C61-862DA507685B}.Release.ActiveCfg = Release|Pocket PC
+		{18FE4164-178C-4823-8C61-862DA507685B}.Release.Build.0 = Release|Pocket PC
+		{18FE4164-178C-4823-8C61-862DA507685B}.Release.Deploy.0 = Release|Pocket PC
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
